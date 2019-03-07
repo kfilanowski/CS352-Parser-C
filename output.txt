@@ -1,0 +1,128 @@
+2 - @ < 2;
+===> '@'
+Lexical error: not a lexeme
+
+8-cat;
+===> 'cat'
+Lexical error: not a lexeme
+
+cat-9;
+===> 'cat'
+Lexical error: not a lexeme
+
+9+2;
+Syntax OK
+Value is 11
+
+3 ^ 2;
+Syntax OK
+Value is 9
+
+2 ^ 2 ^         3;
+Syntax OK
+Value is 256
+
+(2^2)^3;
+Syntax OK
+Value is 64
+
+2^(2^3);
+Syntax OK
+Value is 256
+
+6-7+8;
+Syntax OK
+Value is 7
+
+(6-7)+8;
+Syntax OK
+Value is 7
+
+6-(7+8);
+Syntax OK
+Value is -9
+
+1 + 2 < 9;
+Syntax OK
+Value is 2
+
+1 + 7 == 9 < 2;
+Syntax OK
+Value is 2
+
+9<2;
+Syntax OK
+Value is 0
+
+1== 0;
+Syntax OK
+Value is 0
+
+1 == 0
+===> ';' expected
+Syntax Error
+
+4 + 8 * 10 < 9;
+Syntax OK
+Value is 4
+
+8-9-(7*6;
+===> ')' expected
+Syntax Error
+
+2 + 1 != 3;
+Syntax OK
+Value is 3
+
+((((((((2)+1)-1)+1)-1)+1)-1)+1)-1;
+Syntax OK
+Value is 2
+
+(((2)+2)+2)/(3);
+Syntax OK
+Value is 2
+
+(2*(2+3)^2)^2;
+Syntax OK
+Value is 2500
+
+2 + 3 - 5) ;
+===> '(' expected
+Syntax Error
+
+5 < 2 + ;
+===> 'int_literal' expected
+Syntax Error
+
+2 !=;
+===> 'int_literal' expected
+Syntax Error
+
++2;
+===> 'int_literal' expected
+Syntax Error
+
+-;
+===> 'int_literal' expected
+Syntax Error
+
+;
+===> 'int_literal' expected
+Syntax Error
+
+2-;
+===> 'int_literal' expected
+Syntax Error
+
+1
+===> ';' expected
+Syntax Error
+
+2**7;
+===> 'int_literal' expected
+Syntax Error
+
+3 5 + 2;
+===> ';' expected
+Syntax Error
+

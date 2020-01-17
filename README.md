@@ -17,16 +17,22 @@ This program will take a file as input, where the text file contains mathematica
 # Contents
 interpreter.c
   * The main driver of the program. This is the one to call when the program is to be run.
+  
 tokenizer.c
 * The lexical analyzer. This is one of the tests that will be run on the input file.
+
 tokenizer.h
 * The header file containing the outline of the constants and functions used in tokenizer.c.
+
 parser.c
 * The parser. This parser will analyze the semantics of the sentence and output any errors. If there are no errors, the evaluated total will be output into a file.
+
 parser.h
 * The header file containing the outline of the constants and functions used in parser.c.
+
 input.txt
 * An example of possible inputs, with a mix and match of sentences that will work and fail to help visualize what the program does. 
+
 output.txt
 * An example of the output after running the program and feeding it input.txt. This helps visualize what the program does. 
 
